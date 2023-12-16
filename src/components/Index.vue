@@ -46,7 +46,7 @@ const imgList = ref([]);
 const getImg = async () => {
   isSaving.value = true;
   try {
-    const { data } = await axios.get("https://54.199.16.160/generator-back/endpoint.php", {
+    const { data } = await axios.get("54.199.16.160/generator-back/endpoint.php", {
       params: { user_input: user_input.value },
     });
 
