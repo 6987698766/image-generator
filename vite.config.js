@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/generator-back": {
-        target: "http://localhost:80",
+        target: "http://54.199.16.160",
         secure: true,
         changeOrigin: true,
         rewrite: (path) => path,
